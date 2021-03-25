@@ -8,11 +8,11 @@ Datos = fromJSON(rawToChar(repositorio$content))
 
 Datos <- data.frame(Datos)
 
-# grafico4 = plot_ly(
-#   Datos, 
-#   y = ~Diagnostico,
-#   x = ~Total, 
-#  type = "bar"
-# )
-# grafico4 %>% layout(title = "Enfermedades Profesionales Por Diagnostico")
+grafico4 = plot_ly(
+  Datos,
+  x = ~Diagnostico,
+  y = ~Total,
+ type = "bar"
+)
+grafico4 %>% layout(title = "Enfermedades Profesionales Por Diagnostico")
 
